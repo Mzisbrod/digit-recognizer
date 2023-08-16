@@ -28,6 +28,7 @@ model.add(Dense(64, activation='relu'))
 model.add(Dropout(0.3))
 model.add(Dense(10, activation='softmax'))
 
+# Uses crossentropy loss, learning rate .7
 model.compile(loss='categorical_crossentropy', optimizer=Adadelta(lr=0.7), metrics=['accuracy'])
 
 # Train the model
